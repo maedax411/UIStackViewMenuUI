@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  UIStackViewSample
-//
-//  Created by 前田 晃良 on 2017/08/01.
-//  Copyright © 2017年 d_na_ser. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
