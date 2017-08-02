@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -305,7 +306,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="C07-XC-nD8">
-                                <rect key="frame" x="15" y="70" width="345" height="70"/>
+                                <rect key="frame" x="15" y="40" width="345" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huy-JS-24S">
                                         <rect key="frame" x="0.0" y="0.0" width="79" height="70"/>
@@ -341,6 +342,36 @@
                                     <constraint firstAttribute="height" constant="70" id="YXN-EL-wb3"/>
                                 </constraints>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-72-slm">
+                                <rect key="frame" x="31" y="130" width="313" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmW-aq-PRP">
+                                        <rect key="frame" x="0.0" y="40" width="94.5" height="10"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.84705882352941175" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="IGB-4u-WNF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HZ-8C-0ud">
+                                        <rect key="frame" x="109.5" y="30" width="94" height="20"/>
+                                        <color key="backgroundColor" red="0.64313725490196072" green="0.80392156862745101" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="HGR-nM-HhC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLp-6O-F7N">
+                                        <rect key="frame" x="218.5" y="20" width="94.5" height="30"/>
+                                        <color key="backgroundColor" red="0.47450980392156861" green="0.36078431372549019" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="F5w-qF-EK5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.919677734375" green="0.36078431372549019" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fQH-I2-lVg"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -349,7 +380,10 @@
                             <constraint firstAttribute="trailing" secondItem="C07-XC-nD8" secondAttribute="trailing" constant="15" id="ZHR-Fh-ShC"/>
                             <constraint firstItem="EfJ-D1-BG8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fR9-Q8-Veq"/>
                             <constraint firstAttribute="trailing" secondItem="EfJ-D1-BG8" secondAttribute="trailing" id="kE8-yh-FkS"/>
-                            <constraint firstItem="C07-XC-nD8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="pqu-FT-81C"/>
+                            <constraint firstItem="hfR-72-slm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="llt-NH-vAs"/>
+                            <constraint firstItem="hfR-72-slm" firstAttribute="top" secondItem="C07-XC-nD8" secondAttribute="bottom" constant="20" id="mwk-RR-G0Q"/>
+                            <constraint firstItem="C07-XC-nD8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="pqu-FT-81C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hfR-72-slm" secondAttribute="trailing" constant="15" id="z5D-XY-ys6"/>
                         </constraints>
                     </view>
                 </viewController>
